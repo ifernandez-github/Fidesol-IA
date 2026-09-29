@@ -1,0 +1,6 @@
+@Fidesol_IA_HostAddress = http://localhost:5259
+
+GET {{Fidesol_IA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
