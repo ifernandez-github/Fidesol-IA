@@ -12,6 +12,9 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    // Acceso directo a OpenAPI UI nativa de .NET 10
+    app.MapGet("/", () => Results.Redirect("/openapi/v1.json"));
 }
 
 app.UseHttpsRedirection();
